@@ -1,7 +1,7 @@
 package ru.kim.course.service;
 
-import ru.kim.course.dto.CourseToUpdateDto;
 import ru.kim.course.dto.CourseToCreateDto;
+import ru.kim.course.dto.CourseToUpdateDto;
 import ru.kim.course.model.Course;
 
 import java.util.List;

@@ -2,10 +2,9 @@ package ru.kim.course.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.MethodArgumentNotValidException;
-import ru.kim.course.dto.CourseToUpdateDto;
 import ru.kim.course.dao.CourseDao;
 import ru.kim.course.dto.CourseToCreateDto;
+import ru.kim.course.dto.CourseToUpdateDto;
 import ru.kim.course.model.Course;
 
 import java.util.ArrayList;
@@ -54,7 +53,7 @@ public class CourseServiceImpl implements CourseService {
 
     @Override
     public List<Course> findAllByPrefix(String prefix) {
-        if(prefix.isEmpty()) {
+        if (prefix.isEmpty()) {
             throw new IllegalArgumentException("Префикс для поиска не должен быть пустым");
         }
 
